@@ -1,0 +1,744 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "img": "boek1.jpg",
+      "title": "Kikker en de horizon",
+      "description": "Rat stond op een heuvel en keek over het land naar de horizon. Wat is de wereld toch mooi, dacht hij. Het wordt tijd dat ik weer eens op reis ga! Kikker wil dolgraag met hem mee. En zo trekken de twee vrienden de horizon tegemoet. Maar Kikker vindt dat het wel erg lang duurt voordat ze er zijn. En hoe zou het thuis met iedereen gaan?",
+      "questions": [
+        {
+          "id": 1,
+          "title": "Hoe heten de hoofdpersonen?",
+          "answer": "A",
+          "options": {
+            "A": "Kikker en de rat",
+            "B": "Kikker en de horizon",
+            "C": "Kikker, de rat en de vlinder"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Wie kwam met het idee om op reis te gaan?",
+          "answer": "B",
+          "options": {
+            "A": "De rat",
+            "B": "Kikker",
+            "C": "De vlinder"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Waarom wilde 1 van de jongens naar huis?",
+          "answer": "C",
+          "options": {
+            "A": "Hij moest naar huis",
+            "B": "Hij was bang",
+            "C": "Hij had heimwee"
+          }
+        }
+      ],
+      "availability": [
+        {
+          "location": "Centrale OBA",
+          "available": false
+        },
+        {
+          "location": "OBA Banne",
+          "available": false
+        },
+        {
+          "location": "OBA Bijlmerplein",
+          "available": false
+        },
+        {
+          "location": "OBA Bos en Lommer",
+          "available": false
+        },
+        {
+          "location": "OBA Buitenveldert",
+          "available": false
+        },
+        {
+          "location": "OBA Cinétol",
+          "available": false
+        },
+        {
+          "location": "OBA De Hallen",
+          "available": false
+        },
+        {
+          "location": "OBA Diemen",
+          "available": false
+        },
+        {
+          "location": "OBA Duivendrecht",
+          "available": false
+        },
+        {
+          "location": "OBA Geuzenveld",
+          "available": false
+        },
+        {
+          "location": "OBA IJburg",
+          "available": false
+        },
+        {
+          "location": "OBA Javaplein",
+          "available": false
+        },
+        {
+          "location": "OBA Mercatorplein",
+          "available": false
+        },
+        {
+          "location": "OBA Molenwijk",
+          "available": false
+        },
+        {
+          "location": "OBA Olympisch Kwartier",
+          "available": true
+        },
+        {
+          "location": "OBA Osdorp",
+          "available": false
+        },
+        {
+          "location": "OBA Ouderkerk",
+          "available": true
+        },
+        {
+          "location": "OBA Reigersbos",
+          "available": true
+        },
+        {
+          "location": "OBA Roelof Hartplein",
+          "available": false
+        },
+        {
+          "location": "OBA Slotervaart",
+          "available": false
+        },
+        {
+          "location": "OBA Slotermeer",
+          "available": false
+        },
+        {
+          "location": "OBA Spaarndammerbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Staatsliedenbuurt",
+          "available": true
+        },
+        {
+          "location": "OBA Van der Pek",
+          "available": false
+        },
+        {
+          "location": "OBA Waterlandplein",
+          "available": false
+        },
+        {
+          "location": "OBA Magazijn",
+          "available": true
+        },
+        {
+          "location": "OBA Wisselcollecties",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "boek2.jpg",
+      "title": "Heksje Mimi op vakantie",
+      "description": "Heksje Mimi en haar heksenvriendjes gaan samen op vakantie naar zee. Het is een lange rit met de bus, maar de heksjes zingen en lachen de hele weg. Aan zee schijnt de zon. De heksjes zetten hun tent op en gaan dan lekker spelen op het strand. Ze maken zandkastelen, varen met een bootje, vangen krabbetjes, surfen op de golven ... 's Avonds zingen ze heksenliedjes en ze vertellen mopjes rond het vuur van de barbecue. Wat is vakantie toch heerlijk!",
+      "questions": [
+        {
+          "id": 1,
+          "title": "Wie gaan er op vakantie?",
+          "answer": "A",
+          "options": {
+            "A": "Heksje Mimi, opa en de heksenvriendinnen",
+            "B": "Heksje Mimi en opa",
+            "C": "Heksje Mimi en haar gezin"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Wat gaan deze meiden doen?",
+          "answer": "B",
+          "options": {
+            "A": "Naar een pretpark",
+            "B": "Zwemmen",
+            "C": "Kamperen"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Welke activiteit hebben ze niet gedaan?",
+          "answer": "C",
+          "options": {
+            "A": "Surfen",
+            "B": "Zingen",
+            "C": "Dansen"
+          }
+        }
+      ],
+      "availability": [
+        {
+          "location": "Centrale OBA",
+          "available": false
+        },
+        {
+          "location": "OBA Banne",
+          "available": false
+        },
+        {
+          "location": "OBA Bijlmerplein",
+          "available": true
+        },
+        {
+          "location": "OBA Bos en Lommer",
+          "available": false
+        },
+        {
+          "location": "OBA Buitenveldert",
+          "available": true
+        },
+        {
+          "location": "OBA Cinétol",
+          "available": false
+        },
+        {
+          "location": "OBA De Hallen",
+          "available": true
+        },
+        {
+          "location": "OBA Diemen",
+          "available": false
+        },
+        {
+          "location": "OBA Duivendrecht",
+          "available": false
+        },
+        {
+          "location": "OBA Geuzenveld",
+          "available": false
+        },
+        {
+          "location": "OBA IJburg",
+          "available": false
+        },
+        {
+          "location": "OBA Javaplein",
+          "available": false
+        },
+        {
+          "location": "OBA Mercatorplein",
+          "available": true
+        },
+        {
+          "location": "OBA Molenwijk",
+          "available": false
+        },
+        {
+          "location": "OBA Olympisch Kwartier",
+          "available": false
+        },
+        {
+          "location": "OBA Osdorp",
+          "available": false
+        },
+        {
+          "location": "OBA Ouderkerk",
+          "available": false
+        },
+        {
+          "location": "OBA Reigersbos",
+          "available": false
+        },
+        {
+          "location": "OBA Roelof Hartplein",
+          "available": false
+        },
+        {
+          "location": "OBA Slotervaart",
+          "available": false
+        },
+        {
+          "location": "OBA Slotermeer",
+          "available": false
+        },
+        {
+          "location": "OBA Spaarndammerbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Staatsliedenbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Van der Pek",
+          "available": false
+        },
+        {
+          "location": "OBA Waterlandplein",
+          "available": false
+        },
+        {
+          "location": "OBA Magazijn",
+          "available": false
+        },
+        {
+          "location": "OBA Wisselcollecties",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "img": "boek3.jpg",
+      "title": "Pettson gaat kamperen",
+      "description": "Poes Findus vindt op zolder een oude tent. Hij haalt opa Pettson over om te gaan kamperen, maar Pettson wil enkel aan het meer kamperen. Dan kunnen ze ook gaan hengelen en meteen de nieuwe uitvinding van Pettson uitproberen. Alles verloopt volgens plan, tot de kippen zich ermee bemoeien. Als Pettson en Findus met de tent op weg gaan, eindigen ze… achteraan in de tuin! En dan begint het kamperen pas echt voor Findus…",
+      "questions": [
+        {
+          "id": 1,
+          "title": "Hoe heet de hoofdpersoon?",
+          "answer": "A",
+          "options": {
+            "A": "Pettson",
+            "B": "Peter",
+            "C": "Pieter"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Wat voor dier heeft hij als huisdier?",
+          "answer": "B",
+          "options": {
+            "A": "Een kip",
+            "B": "Een kat",
+            "C": "Een hond"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Wat gaan zij doen?",
+          "answer": "C",
+          "options": {
+            "A": "Een huis maken voor kippen",
+            "B": "Wandelen en overnachten in de bergen",
+            "C": "Kamperen"
+          }
+        }
+      ],
+      "availability": [
+        {
+          "location": "Centrale OBA",
+          "available": false
+        },
+        {
+          "location": "OBA Banne",
+          "available": false
+        },
+        {
+          "location": "OBA Bijlmerplein",
+          "available": true
+        },
+        {
+          "location": "OBA Bos en Lommer",
+          "available": true
+        },
+        {
+          "location": "OBA Buitenveldert",
+          "available": false
+        },
+        {
+          "location": "OBA Cinétol",
+          "available": false
+        },
+        {
+          "location": "OBA De Hallen",
+          "available": false
+        },
+        {
+          "location": "OBA Diemen",
+          "available": true
+        },
+        {
+          "location": "OBA Duivendrecht",
+          "available": false
+        },
+        {
+          "location": "OBA Geuzenveld",
+          "available": false
+        },
+        {
+          "location": "OBA IJburg",
+          "available": false
+        },
+        {
+          "location": "OBA Javaplein",
+          "available": false
+        },
+        {
+          "location": "OBA Mercatorplein",
+          "available": true
+        },
+        {
+          "location": "OBA Molenwijk",
+          "available": false
+        },
+        {
+          "location": "OBA Olympisch Kwartier",
+          "available": false
+        },
+        {
+          "location": "OBA Osdorp",
+          "available": false
+        },
+        {
+          "location": "OBA Ouderkerk",
+          "available": false
+        },
+        {
+          "location": "OBA Reigersbos",
+          "available": false
+        },
+        {
+          "location": "OBA Roelof Hartplein",
+          "available": false
+        },
+        {
+          "location": "OBA Slotervaart",
+          "available": false
+        },
+        {
+          "location": "OBA Slotermeer",
+          "available": false
+        },
+        {
+          "location": "OBA Spaarndammerbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Staatsliedenbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Van der Pek",
+          "available": false
+        },
+        {
+          "location": "OBA Waterlandplein",
+          "available": false
+        },
+        {
+          "location": "OBA Magazijn",
+          "available": true
+        },
+        {
+          "location": "OBA Wisselcollecties",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "img": "boek4.jpg",
+      "title": "Met opa naar zee",
+      "description": "Opa beleeft in dit boek weer een nieuw avontuur met zijn kleinkinderen. Ze gaan met z'n allen naar het strand. Vandaag is opa de generaal en past goed op alle kinderen. Aangekomen op het strand vertelt opa dat ze allemaal goed bij elkaar moeten blijven zodat niemand kan verdwalen. De kinderen gaan samen zwemmen, graven opa in en hebben veel plezier. Maar als opa voor iedereen een ijsje wil halen, raakt hij zelf de weg kwijt. Zullen ze opa weer vinden?",
+      "questions": [
+        {
+          "id": 1,
+          "title": "Met wie gaat opa op reis?",
+          "answer": "A",
+          "options": {
+            "A": "Zijn kleinkinderen en kinderen van de buurt",
+            "B": "De kinderen die hij les geeft",
+            "C": "Zijn kleinkinderen en kinderen van de buurt"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Waar gaat de reis heen?",
+          "answer": "B",
+          "options": {
+            "A": "Het pretpark",
+            "B": "Het strand",
+            "C": "De McDonalds"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Hebben de kinderen het naar hun zin?",
+          "answer": "C",
+          "options": {
+            "A": "nee",
+            "B": "een paar",
+            "C": "ja"
+          }
+        }
+      ],
+      "availability": [
+        {
+          "location": "Centrale OBA",
+          "available": false
+        },
+        {
+          "location": "OBA Banne",
+          "available": true
+        },
+        {
+          "location": "OBA Bijlmerplein",
+          "available": true
+        },
+        {
+          "location": "OBA Bos en Lommer",
+          "available": false
+        },
+        {
+          "location": "OBA Buitenveldert",
+          "available": false
+        },
+        {
+          "location": "OBA Cinétol",
+          "available": false
+        },
+        {
+          "location": "OBA De Hallen",
+          "available": false
+        },
+        {
+          "location": "OBA Diemen",
+          "available": false
+        },
+        {
+          "location": "OBA Duivendrecht",
+          "available": false
+        },
+        {
+          "location": "OBA Geuzenveld",
+          "available": false
+        },
+        {
+          "location": "OBA IJburg",
+          "available": false
+        },
+        {
+          "location": "OBA Javaplein",
+          "available": false
+        },
+        {
+          "location": "OBA Mercatorplein",
+          "available": true
+        },
+        {
+          "location": "OBA Molenwijk",
+          "available": false
+        },
+        {
+          "location": "OBA Olympisch Kwartier",
+          "available": false
+        },
+        {
+          "location": "OBA Osdorp",
+          "available": false
+        },
+        {
+          "location": "OBA Ouderkerk",
+          "available": false
+        },
+        {
+          "location": "OBA Reigersbos",
+          "available": false
+        },
+        {
+          "location": "OBA Roelof Hartplein",
+          "available": false
+        },
+        {
+          "location": "OBA Slotervaart",
+          "available": true
+        },
+        {
+          "location": "OBA Slotermeer",
+          "available": false
+        },
+        {
+          "location": "OBA Spaarndammerbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Staatsliedenbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Van der Pek",
+          "available": true
+        },
+        {
+          "location": "OBA Waterlandplein",
+          "available": false
+        },
+        {
+          "location": "OBA Magazijn",
+          "available": true
+        },
+        {
+          "location": "OBA Wisselcollecties",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "img": "boek5.jpg",
+      "title": "Welkom thuis, Bever!",
+      "description": "Bever gaat op avontuur, maar hij verdwaalt. Akita de Hond, die in zijn luchtballon de wereld rondreist, helpt hem om weer thuis te komen. Maar hoe ziet het huis van Bever er eigenlijk uit? Woont hij in een geweven bol hangend aan een tak, of in een schuilplaats op de bodem van de zee? Of misschien hoog boven op een toren met uitzicht over de stad?",
+      "questions": [
+        {
+          "id": 1,
+          "title": "Waarmee heeft Bever hulp nodig?",
+          "answer": "A",
+          "options": {
+            "A": "Het vinden van zijn huis",
+            "B": "Het vinden van zijn ouders",
+            "C": "Het vinden van zijn vrienden"
+          }
+        },
+        {
+          "id": 2,
+          "title": "Van wie krijgt Bever hulp?",
+          "answer": "B",
+          "options": {
+            "A": "Een vriend",
+            "B": "Een onbekende",
+            "C": "Zijn zusje"
+          }
+        },
+        {
+          "id": 3,
+          "title": "Welk dier is Akita?",
+          "answer": "C",
+          "options": {
+            "A": "Een kat",
+            "B": "Een muis",
+            "C": "Een hond"
+          }
+        }
+      ],
+      "availability": [
+        {
+          "location": "Centrale OBA",
+          "available": false
+        },
+        {
+          "location": "OBA Banne",
+          "available": false
+        },
+        {
+          "location": "OBA Bijlmerplein",
+          "available": false
+        },
+        {
+          "location": "OBA Bos en Lommer",
+          "available": false
+        },
+        {
+          "location": "OBA Buitenveldert",
+          "available": false
+        },
+        {
+          "location": "OBA Cinétol",
+          "available": false
+        },
+        {
+          "location": "OBA De Hallen",
+          "available": false
+        },
+        {
+          "location": "OBA Diemen",
+          "available": false
+        },
+        {
+          "location": "OBA Duivendrecht",
+          "available": false
+        },
+        {
+          "location": "OBA Geuzenveld",
+          "available": false
+        },
+        {
+          "location": "OBA IJburg",
+          "available": false
+        },
+        {
+          "location": "OBA Javaplein",
+          "available": false
+        },
+        {
+          "location": "OBA Mercatorplein",
+          "available": false
+        },
+        {
+          "location": "OBA Molenwijk",
+          "available": false
+        },
+        {
+          "location": "OBA Olympisch Kwartier",
+          "available": true
+        },
+        {
+          "location": "OBA Osdorp",
+          "available": false
+        },
+        {
+          "location": "OBA Ouderkerk",
+          "available": false
+        },
+        {
+          "location": "OBA Reigersbos",
+          "available": false
+        },
+        {
+          "location": "OBA Roelof Hartplein",
+          "available": false
+        },
+        {
+          "location": "OBA Slotervaart",
+          "available": false
+        },
+        {
+          "location": "OBA Slotermeer",
+          "available": false
+        },
+        {
+          "location": "OBA Spaarndammerbuurt",
+          "available": true
+        },
+        {
+          "location": "OBA Staatsliedenbuurt",
+          "available": false
+        },
+        {
+          "location": "OBA Van der Pek",
+          "available": false
+        },
+        {
+          "location": "OBA Waterlandplein",
+          "available": false
+        },
+        {
+          "location": "OBA Magazijn",
+          "available": false
+        },
+        {
+          "location": "OBA Wisselcollecties",
+          "available": true
+        }
+      ]
+    }
+  ]
+}
