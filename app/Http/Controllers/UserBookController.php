@@ -29,6 +29,7 @@ class UserBookController extends Controller
                  ->join( 'user_book', 'user.id', '=', 'user_book.user_id' )
                  ->where( 'user_book.competition_id', $id )
                  ->select( 'user.id', 'user.first_name', 'user.last_name_prefix', 'user.last_name', 'user.email', 'user.group', 'user.teacher' )
+                 ->groupBy('user.id')
                  ->get();
 
         foreach($users as $user) {

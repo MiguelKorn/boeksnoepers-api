@@ -102,7 +102,8 @@ class DatabaseSeeder extends Seeder
         DB::table( 'user_book' )->delete();
         DB::table( 'user_book' )->insert( [
             ['id'=>1, 'user_id'=>2, 'book_id'=>1, 'competition_id'=>2, 'is_current'=>true, 'score'=>null],
-            ['id'=>2, 'user_id'=>3, 'book_id'=>2, 'competition_id'=>2, 'is_current'=>false, 'score'=>5]
+            ['id'=>2, 'user_id'=>3, 'book_id'=>2, 'competition_id'=>2, 'is_current'=>false, 'score'=>5],
+            ['id'=>3, 'user_id'=>2, 'book_id'=>2, 'competition_id'=>2, 'is_current'=>false, 'score'=>3]
         ]);
 //        $table->increments( 'id' );
 //        $table->integer( 'user_id' )->unsigned();
