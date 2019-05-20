@@ -18,6 +18,7 @@ class CreateUserTable extends Migration
             $table->string( 'first_name', 20 );
             $table->string( 'last_name_prefix', 20 )->nullable();
             $table->string( 'last_name', 20 );
+            $table->enum( 'gender', ["M", "F"] );
             $table->string( 'username' , 20);
             $table->string( 'email' )
                   ->unique()

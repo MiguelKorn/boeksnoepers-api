@@ -37,3 +37,5 @@ Route::get('competitions/{competition}/users', 'UserBookController@showUsersByCo
 
 Route::get('competitions', 'CompetitionController@index');
 Route::get('competitions/{competition}', 'CompetitionController@show');
+
+Route::get('users/{id}', 'UserController@show'); //TODO: add to middleware

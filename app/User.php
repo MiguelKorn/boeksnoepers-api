@@ -41,4 +41,12 @@ class User extends Authenticatable
     public function userBooks() {
         return $this->hasMany('App\UserBook');
     }
+
+    public function teacher() {
+        return $this->belongsTo(self::class, 'teacher');
+    }
+
+    public function students() {
+        return $this->hasMany(self::class);
+    }
 }

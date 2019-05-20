@@ -86,17 +86,17 @@ class DatabaseSeeder extends Seeder
 
         DB::table( 'user' )->delete();
         DB::table( 'user' )->insert( [
-            [ 'id' => '1', 'first_name' => 'Roos', 'last_name_prefix' => 'de', 'last_name' => 'Jong', 'username' => 'jongr', 'email' => 'jongr@boeksnoepers.nl', 'group' => '5', 'password' => bcrypt('jongr'), 'teacher' => null],
-            [ 'id' => '2', 'first_name' => 'Daan', 'last_name_prefix' => null, 'last_name' => 'Jansen', 'username' => 'jansd', 'email' => null, 'group' => '5', 'password' => bcrypt('jansd'), 'teacher' => 1 ],
-            [ 'id' => '3', 'first_name' => 'Anna', 'last_name_prefix' => 'de','last_name' => 'Vries', 'username' => 'vriesa', 'email' => null, 'group' => '5', 'password' => bcrypt('vriesa'), 'teacher' => 1 ],
-            [ 'id' => '4', 'first_name' => 'Noah', 'last_name_prefix' => 'van den','last_name' => 'Berge', 'username' => 'bergen', 'email' => null, 'group' => '5', 'password' => bcrypt('bergen'), 'teacher' => 1 ],
-            [ 'id' => '5', 'first_name' => 'Emma', 'last_name_prefix' => 'van','last_name' => 'Dijk', 'username' => 'dijke', 'email' => null, 'group' => '5', 'password' => bcrypt('dijke'), 'teacher' => 1 ],
-            [ 'id' => '6', 'first_name' => 'Ruben', 'last_name_prefix' => null, 'last_name' => 'Visser', 'username' => 'visser', 'email' => null, 'group' => '5', 'password' => bcrypt('visser'), 'teacher' => 1 ],
-            [ 'id' => '7', 'first_name' => 'Tess', 'last_name_prefix' => null, 'last_name' => 'Smit', 'username' => 'smitt', 'email' => null, 'group' => '5', 'password' => bcrypt('smitt'), 'teacher' => 1 ],
-            [ 'id' => '8', 'first_name' => 'Ruben', 'last_name_prefix' => null, 'last_name' => 'Meijer', 'username' => 'meijer', 'email' => null, 'group' => '5', 'password' => bcrypt('meijer'), 'teacher' => 1 ],
-            [ 'id' => '9', 'first_name' => 'Sophie', 'last_name_prefix' => 'de','last_name' => 'Boer', 'username' => 'boers', 'email' => null, 'group' => '5', 'password' => bcrypt('boers'), 'teacher' => 1 ],
-            [ 'id' => '10', 'first_name' => 'Finn', 'last_name_prefix' => null, 'last_name' => 'Bos', 'username' => 'bosf', 'email' => null, 'group' => '5', 'password' => bcrypt('bosf'), 'teacher' => 1 ],
-            [ 'id' => '11', 'first_name' => 'Julia', 'last_name_prefix' => 'van','last_name' => 'Leeuwen', 'username' => 'leeuwj', 'email' => null, 'group' => '5', 'password' => bcrypt('leeuwj'), 'teacher' => 1 ],
+            [ 'id' => '1', 'first_name' => 'Roos', 'last_name_prefix' => 'de', 'last_name' => 'Jong', 'gender'=>'F','username' => 'jongr', 'email' => 'jongr@boeksnoepers.nl', 'group' => '5', 'password' => bcrypt('jongr'), 'teacher' => null],
+            [ 'id' => '2', 'first_name' => 'Daan', 'last_name_prefix' => null, 'last_name' => 'Jansen', 'gender'=>'M','username' => 'jansd', 'email' => null, 'group' => '5', 'password' => bcrypt('jansd'), 'teacher' => 1 ],
+            [ 'id' => '3', 'first_name' => 'Anna', 'last_name_prefix' => 'de','last_name' => 'Vries', 'gender'=>'F','username' => 'vriesa', 'email' => null, 'group' => '5', 'password' => bcrypt('vriesa'), 'teacher' => 1 ],
+            [ 'id' => '4', 'first_name' => 'Noah', 'last_name_prefix' => 'van den','last_name' => 'Berge', 'gender'=>'M','username' => 'bergen', 'email' => null, 'group' => '5', 'password' => bcrypt('bergen'), 'teacher' => 1 ],
+            [ 'id' => '5', 'first_name' => 'Emma', 'last_name_prefix' => 'van','last_name' => 'Dijk', 'gender'=>'F','username' => 'dijke', 'email' => null, 'group' => '5', 'password' => bcrypt('dijke'), 'teacher' => 1 ],
+            [ 'id' => '6', 'first_name' => 'Ruben', 'last_name_prefix' => null, 'last_name' => 'Visser', 'gender'=>'M','username' => 'visser', 'email' => null, 'group' => '5', 'password' => bcrypt('visser'), 'teacher' => 1 ],
+            [ 'id' => '7', 'first_name' => 'Tess', 'last_name_prefix' => null, 'last_name' => 'Smit', 'gender'=>'F','username' => 'smitt', 'email' => null, 'group' => '5', 'password' => bcrypt('smitt'), 'teacher' => 1 ],
+            [ 'id' => '8', 'first_name' => 'Ruben', 'last_name_prefix' => null, 'last_name' => 'Meijer', 'gender'=>'M','username' => 'meijer', 'email' => null, 'group' => '5', 'password' => bcrypt('meijer'), 'teacher' => 1 ],
+            [ 'id' => '9', 'first_name' => 'Sophie', 'last_name_prefix' => 'de','last_name' => 'Boer', 'gender'=>'F','username' => 'boers', 'email' => null, 'group' => '5', 'password' => bcrypt('boers'), 'teacher' => 1 ],
+            [ 'id' => '10', 'first_name' => 'Finn', 'last_name_prefix' => null, 'last_name' => 'Bos', 'gender'=>'M','username' => 'bosf', 'email' => null, 'group' => '5', 'password' => bcrypt('bosf'), 'teacher' => 1 ],
+            [ 'id' => '11', 'first_name' => 'Julia', 'last_name_prefix' => 'van','last_name' => 'Leeuwen', 'gender'=>'F','username' => 'leeuwj', 'email' => null, 'group' => '5', 'password' => bcrypt('leeuwj'), 'teacher' => 1 ],
         ] );
 
         DB::table( 'user_book' )->delete();
