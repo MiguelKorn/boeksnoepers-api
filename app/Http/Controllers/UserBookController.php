@@ -25,10 +25,16 @@ class UserBookController extends Controller
 
     public function showUsersByCompetition($id)
     {
-        return DB::table( 'user' )
+        $users = DB::table( 'user' )
                  ->join( 'user_book', 'user.id', '=', 'user_book.user_id' )
                  ->where( 'user_book.competition_id', $id )
                  ->select( 'user.id', 'user.first_name', 'user.last_name_prefix', 'user.last_name', 'user.email', 'user.group', 'user.teacher' )
                  ->get();
+
+        foreach($users as $user) {
+            $user->books = UserBook::where('user_id', $user->id)->get();
+        }
+
+        return $users;
     }
 }
