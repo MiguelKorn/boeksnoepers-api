@@ -33,7 +33,7 @@ Route::get( 'books/{book}/questions', 'BookController@showWithQuestions' );
 Route::get( 'books/{book}/locations', 'BookController@showWithLocations' );
 
 Route::get('users/{user}/competitions/{competition}', 'UserBookController@showUserBooksByCompetition');
-Route::get('competitions/{competition}/users', 'UserBookController@showUsersByCompetition');
+Route::get('competitions/current', 'UserBookController@showUsersByCurrentCompetition');
 
 Route::get('competitions', 'CompetitionController@index');
 Route::get('competitions/{competition}', 'CompetitionController@show');
