@@ -33,6 +33,7 @@ class UserBookController extends Controller
                    } )
 //                 ->where( 'user_book.competition_id', $id )
                    ->where( 'user.group', 5 )
+                   ->whereNotNull( 'user.teacher' )
                    ->select( 'user.id', 'user.first_name', 'user.last_name_prefix', 'user.last_name', 'user.email', 'user.group', 'user.teacher' )
                    ->groupBy( 'user.id' )
                    ->orderBy( 'first_name' )
