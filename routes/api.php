@@ -42,3 +42,4 @@ Route::get('competitions/{competition}', 'CompetitionController@show');
 //TODO: add to middleware
 Route::get('users/{id}', 'UserController@show');
 Route::get('users/{id}/books', 'BookController@showWithRead');
+Route::post('users/currentBook', 'BookController@updateCurrentBook');

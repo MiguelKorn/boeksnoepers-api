@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Book;
 use App\UserBook;
 
@@ -27,13 +28,26 @@ class BookController extends Controller
         return Book::with( 'locations' )->where( 'id', $id )->get();
     }
 
-    public function showWithRead($id) {
+    public function showWithRead($id)
+    {
         $books = Book::all();
 
-        foreach ($books as $book) {
-            $book->user = UserBook::where('book_id', $book->id)->where('user_id', $id)->where('competition_id', 2)->get();
+        foreach ( $books as $book ) {
+            $book->user = UserBook::where( 'book_id', $book->id )->where( 'user_id', $id )->where( 'competition_id', 2 )->get();
         }
 
         return $books;
+    }
+
+    public function updateCurrentBook(Request $request)
+    {
+        $book = UserBook::where( 'is_current', true )
+                        ->where( 'user_id', $request->input( 'user_id' ) )
+                        ->where( 'competition_id', 2 )
+                        ->first();
+
+        $book->book_id = $request->input( 'new_book_id' );
+
+        return response()->json( [ 'success' => ( $book->save() ) ], 200 );
     }
 }
