@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Book;
 use App\UserBook;
@@ -39,6 +40,11 @@ class BookController extends Controller
         return $books;
     }
 
+    public function getCurrentBook($id)
+    {
+        return UserBook::where('user_id', $id)->where( 'is_current', true )->get();
+    }
+
     public function updateCurrentBook(Request $request)
     {
         $book = UserBook::where( 'is_current', true )
@@ -46,11 +52,11 @@ class BookController extends Controller
                         ->where( 'competition_id', 2 )
                         ->first();
 
-        if($request->has('new_book_id')) {
+        if ( $request->has( 'new_book_id' ) ) {
             $book->book_id = $request->input( 'new_book_id' );
         } else {
             $book->is_current = false;
-            $book->score = $request->input('score');
+            $book->score      = $request->input( 'score' );
         }
 
         return response()->json( [ 'success' => ( $book->save() ) ], 200 );
