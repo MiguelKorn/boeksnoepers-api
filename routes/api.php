@@ -32,10 +32,13 @@ Route::get( 'books/{book}', 'BookController@show' );
 Route::get( 'books/{book}/questions', 'BookController@showWithQuestions' );
 Route::get( 'books/{book}/locations', 'BookController@showWithLocations' );
 
+
 Route::get('users/{user}/competitions/{competition}', 'UserBookController@showUserBooksByCompetition');
 Route::get('competitions/current', 'UserBookController@showUsersByCurrentCompetition');
 
 Route::get('competitions', 'CompetitionController@index');
 Route::get('competitions/{competition}', 'CompetitionController@show');
 
-Route::get('users/{id}', 'UserController@show'); //TODO: add to middleware
+//TODO: add to middleware
+Route::get('users/{id}', 'UserController@show');
+Route::get('users/{id}/books', 'BookController@showWithRead');
