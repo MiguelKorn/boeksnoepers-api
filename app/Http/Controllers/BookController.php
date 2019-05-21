@@ -52,11 +52,19 @@ class BookController extends Controller
                         ->where( 'competition_id', 2 )
                         ->first();
 
-        if ( $request->has( 'new_book_id' ) ) {
-            $book->book_id = $request->input( 'new_book_id' );
+        if($book === null) {
+            $book = new UserBook();
+            $book->user_id = $request->input( 'user_id' );
+            $book->book_id = $request->input('new_book_id');
+            $book->competition_id = 2;
+            $book->is_current = true;
         } else {
-            $book->is_current = false;
-            $book->score      = $request->input( 'score' );
+            if ( $request->has( 'new_book_id' ) ) {
+                $book->book_id = $request->input( 'new_book_id' );
+            } else {
+                $book->is_current = false;
+                $book->score      = $request->input( 'score' );
+            }
         }
 
         return response()->json( [ 'success' => ( $book->save() ) ], 200 );
