@@ -30,6 +30,7 @@ class CreateUserTable extends Migration
             $table->string( 'api_token', 60 )
                   ->unique()
                   ->nullable();
+            $table->enum('highest_place', [1, 2, 3])->nullable();
             $table->timestamps();
             $table->softDeletes();
 
