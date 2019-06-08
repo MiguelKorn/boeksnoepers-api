@@ -40,7 +40,7 @@ class UserBookController extends Controller
                    ->get();
 
         foreach ( $users as $user ) {
-            $user->books = UserBook::where( 'user_id', $user->id )->get();
+            $user->books = UserBook::where( 'user_id', $user->id )->where( 'competition_id', 3 )->get();
         }
 
         return $users;
