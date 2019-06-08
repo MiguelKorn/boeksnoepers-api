@@ -73,6 +73,6 @@ class LoginController extends Controller
 
     protected function sendFailedLoginResponse(Request $request)
     {
-        return response()->json(['message'=>'Authenticate failure', 'success'=> false], 422);
+        return response()->json(['message'=>'Authenticate failure', 'success'=> false], 200);
     }
 }
