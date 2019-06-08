@@ -13,6 +13,6 @@ class CompetitionController extends Controller
 
     public function show($id)
     {
-        return Competition::with('userBooks')->where('id', $id);
+        return Competition::with('userBooks')->where('id', $id)->first();
     }
 }
