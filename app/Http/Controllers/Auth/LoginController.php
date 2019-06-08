@@ -68,7 +68,7 @@ class LoginController extends Controller
             $user->save();
         }
 
-        return response()->json(['data'=>'User logged out'], 200);
+        return response()->json(['data'=>'User logged out', 'success'=>true], 200);
     }
 
     protected function sendFailedLoginResponse(Request $request)
