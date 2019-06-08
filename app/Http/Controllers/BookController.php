@@ -34,7 +34,7 @@ class BookController extends Controller
         $books = Book::with('questions', 'locations')->get();
 
         foreach ( $books as $book ) {
-            $book->user = UserBook::where( 'book_id', $book->id )->where( 'user_id', $id )->where( 'competition_id', 2 )->get();
+            $book->user = UserBook::where( 'book_id', $book->id )->where( 'user_id', $id )->where( 'competition_id', 3 )->get();
         }
 
         return $books;
@@ -49,14 +49,14 @@ class BookController extends Controller
     {
         $book = UserBook::where( 'is_current', true )
                         ->where( 'user_id', $request->input( 'user_id' ) )
-                        ->where( 'competition_id', 2 )
+                        ->where( 'competition_id', 3 )
                         ->first();
 
         if($book === null) {
             $book = new UserBook();
             $book->user_id = $request->input( 'user_id' );
             $book->book_id = $request->input('new_book_id');
-            $book->competition_id = 2;
+            $book->competition_id = 3;
             $book->is_current = true;
         } else {
             if ( $request->has( 'new_book_id' ) ) {

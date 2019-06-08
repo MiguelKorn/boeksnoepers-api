@@ -99,7 +99,7 @@ class DatabaseSeeder extends Seeder
         DB::table( 'user' )->delete();
         DB::table( 'user' )->insert( [
             [ 'id' => '1', 'first_name' => 'Roos', 'last_name_prefix' => 'de', 'last_name' => 'Jong', 'gender'=>'F','username' => 'jongr', 'email' => 'jongr@boeksnoepers.nl', 'image'=>null,'group' => '5', 'password' => bcrypt('jongr'), 'teacher' => null, 'highest_place'=>null],
-            [ 'id' => '2', 'first_name' => 'Daan', 'last_name_prefix' => null, 'last_name' => 'Jansen', 'gender'=>'M','username' => 'jansd', 'email' => null, 'image'=>'2.png','group' => '5', 'password' => bcrypt('jansd'), 'teacher' => 1, 'highest_place'=>null ],
+            [ 'id' => '2', 'first_name' => 'Daan', 'last_name_prefix' => null, 'last_name' => 'Jansen', 'gender'=>'M','username' => 'jansd', 'email' => null, 'image'=>'2.png','group' => '5', 'password' => bcrypt('jansd'), 'teacher' => 1, 'highest_place'=>1 ],
             [ 'id' => '3', 'first_name' => 'Anna', 'last_name_prefix' => 'de','last_name' => 'Vries', 'gender'=>'F','username' => 'vriesa', 'email' => null, 'image'=>'3.png','group' => '5', 'password' => bcrypt('vriesa'), 'teacher' => 1, 'highest_place'=>null ],
             [ 'id' => '4', 'first_name' => 'Noah', 'last_name_prefix' => 'van den','last_name' => 'Berge', 'gender'=>'M','username' => 'bergen', 'email' => null, 'image'=>'4.png','group' => '5', 'password' => bcrypt('bergen'), 'teacher' => 1, 'highest_place'=>null ],
             [ 'id' => '5', 'first_name' => 'Emma', 'last_name_prefix' => 'van','last_name' => 'Dijk', 'gender'=>'F','username' => 'dijke', 'email' => null, 'image'=>'5.png','group' => '5', 'password' => bcrypt('dijke'), 'teacher' => 1, 'highest_place'=>null ],
@@ -114,9 +114,22 @@ class DatabaseSeeder extends Seeder
         // delete and insert user_book data
         DB::table( 'user_book' )->delete();
         DB::table( 'user_book' )->insert( [
-            [ 'id' => 1, 'user_id' => 2, 'book_id' => 1, 'competition_id' => 2, 'is_current' => true, 'score' => null ],
-            [ 'id' => 2, 'user_id' => 3, 'book_id' => 2, 'competition_id' => 2, 'is_current' => false, 'score' => 5 ],
-            [ 'id' => 3, 'user_id' => 2, 'book_id' => 2, 'competition_id' => 2, 'is_current' => false, 'score' => 3 ]
+            [ 'id' => 1, 'user_id' => 2, 'book_id' => 3, 'competition_id' => 1, 'is_current' => false, 'score' => 3 ],
+            [ 'id' => 2, 'user_id' => 2, 'book_id' => 4, 'competition_id' => 1, 'is_current' => false, 'score' => 3 ],
+            [ 'id' => 3, 'user_id' => 2, 'book_id' => 1, 'competition_id' => 2, 'is_current' => true, 'score' => null ],
+            [ 'id' => 4, 'user_id' => 3, 'book_id' => 2, 'competition_id' => 2, 'is_current' => false, 'score' => 5 ],
+            [ 'id' => 5, 'user_id' => 2, 'book_id' => 2, 'competition_id' => 2, 'is_current' => false, 'score' => 3 ],
+            [ 'id' => 6, 'user_id' => 2, 'book_id' => 2, 'competition_id' => 3, 'is_current' => true, 'score' => null ],
+            [ 'id' => 7, 'user_id' => 3, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 5 ],
+            [ 'id' => 8, 'user_id' => 5, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 4 ],
+            [ 'id' => 9, 'user_id' => 6, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 3 ],
+            [ 'id' => 10, 'user_id' => 9, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 2 ],
+            [ 'id' => 11, 'user_id' => 4, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 1 ],
+            [ 'id' => 12, 'user_id' => 7, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 1 ],
+            [ 'id' => 13, 'user_id' => 8, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 1 ],
+            [ 'id' => 14, 'user_id' => 10, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 1 ],
+            [ 'id' => 15, 'user_id' => 11, 'book_id' => 2, 'competition_id' => 3, 'is_current' => false, 'score' => 1 ],
+
         ] );
     }
 }

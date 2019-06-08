@@ -28,7 +28,7 @@ class UserBookController extends Controller
         $users = DB::table( 'user' )
                    ->leftJoin( 'user_book', function ($join) {
                        $join->on( 'user.id', '=', 'user_book.user_id' )
-                            ->where( 'user_book.competition_id', 2 )
+                            ->where( 'user_book.competition_id', 3 )
                             ->orWhereNull( 'user_book.competition_id', null );
                    } )
 //                 ->where( 'user_book.competition_id', $id )
