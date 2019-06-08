@@ -50,6 +50,8 @@ class LoginController extends Controller
                 'data'=>$user->toArray()
             ]);
         }
+
+        return $this->sendFailedLoginResponse($request);
     }
 
     public function logout(Request $request)
