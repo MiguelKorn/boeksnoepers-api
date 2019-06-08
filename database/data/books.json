@@ -3,37 +3,37 @@
     {
       "id": 1,
       "img": "boek1.jpg",
-      "title": "Kikker en de horizon",
-      "description": "Rat stond op een heuvel en keek over het land naar de horizon. Wat is de wereld toch mooi, dacht hij. Het wordt tijd dat ik weer eens op reis ga! Kikker wil dolgraag met hem mee. En zo trekken de twee vrienden de horizon tegemoet. Maar Kikker vindt dat het wel erg lang duurt voordat ze er zijn. En hoe zou het thuis met iedereen gaan?",
+      "title": "Joris en het reuzenraadsel",
+      "description": "Joris, zijn wandelende tak Dimi en zijn vriendinnetje Glip varen met het schip van Reus naar zijn zus Reusalie. Maar Reusalie is niet thuis. Wel is daar Pico Bello, die vertelt dat Reusalie gaat trouwen met de koning van Schone Schijn. Maar is dat wel zo?",
       "questions": [
         {
           "id": 1,
-          "title": "Hoe heten de hoofdpersonen?",
+          "title": "Met wie reist Joris in het schip?",
           "answer": "A",
           "options": {
-            "A": "Kikker en de rat",
-            "B": "Kikker en de horizon",
-            "C": "Kikker, de rat en de vlinder"
+            "A": "Zijn wandelende tak Dimi en zijn vriendinnetje Glip",
+            "B": "Zijn rat Dimi en zijn zusje Glip",
+            "C": "Alleen"
           }
         },
         {
           "id": 2,
-          "title": "Wie kwam met het idee om op reis te gaan?",
+          "title": "Waar gaat de reis heen?",
           "answer": "B",
           "options": {
-            "A": "De rat",
-            "B": "Kikker",
-            "C": "De vlinder"
+            "A": "Joris zijn zus",
+            "B": "Reusalie de zus van Reus",
+            "C": "Een eiland"
           }
         },
         {
           "id": 3,
-          "title": "Waarom wilde 1 van de jongens naar huis?",
+          "title": "Wat is het reuzenraadsel?",
           "answer": "C",
           "options": {
-            "A": "Hij moest naar huis",
-            "B": "Hij was bang",
-            "C": "Hij had heimwee"
+            "A": "Waar de schat is",
+            "B": "Wiens ship het is",
+            "C": "Of Reuzalie gaat trouwen"
           }
         }
       ],
