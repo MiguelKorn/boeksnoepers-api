@@ -75,8 +75,8 @@ class BookController extends Controller
         $book        = new Book();
         $book->id    = $request->input( 'id' );
         $book->title = $request->input( 'title' );
-        $book->desc  = $request->input( 'description' );
-        $book->img   = $request->input( 'image' );
+        $book->description  = $request->input( 'desc' );
+        $book->image   = $request->input( 'img' );
         return response()->json( [ 'success' => ( $book->save() ) ], 200 );
     }
 }
