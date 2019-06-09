@@ -9,6 +9,8 @@ class QuestionController extends Controller
 {
     public function store(Request $request)
     {
-        return response()->json( [ 'success' => ( Question::insert($request->input('questions')) ) ], 200 );
+        $data = $request->json()->all();
+
+        return response()->json( [ 'success' => ( Question::insert($data.questions) ) ], 200 );
     }
 }
