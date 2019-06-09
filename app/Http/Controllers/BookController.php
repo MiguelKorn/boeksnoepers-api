@@ -31,7 +31,7 @@ class BookController extends Controller
 
     public function showWithRead($id)
     {
-        $books = Book::with('questions', 'locations')->get();
+        $books = Book::with( 'questions', 'locations' )->get();
 
         foreach ( $books as $book ) {
             $book->user = UserBook::where( 'book_id', $book->id )->where( 'user_id', $id )->where( 'competition_id', 3 )->get();
@@ -42,7 +42,7 @@ class BookController extends Controller
 
     public function getCurrentBook($id)
     {
-        return UserBook::where('user_id', $id)->where( 'is_current', true )->get();
+        return UserBook::where( 'user_id', $id )->where( 'is_current', true )->get();
     }
 
     public function updateCurrentBook(Request $request)
@@ -52,12 +52,12 @@ class BookController extends Controller
                         ->where( 'competition_id', 3 )
                         ->first();
 
-        if($book === null) {
-            $book = new UserBook();
-            $book->user_id = $request->input( 'user_id' );
-            $book->book_id = $request->input('new_book_id');
+        if ( $book === null ) {
+            $book                 = new UserBook();
+            $book->user_id        = $request->input( 'user_id' );
+            $book->book_id        = $request->input( 'new_book_id' );
             $book->competition_id = 3;
-            $book->is_current = true;
+            $book->is_current     = true;
         } else {
             if ( $request->has( 'new_book_id' ) ) {
                 $book->book_id = $request->input( 'new_book_id' );
@@ -67,6 +67,16 @@ class BookController extends Controller
             }
         }
 
+        return response()->json( [ 'success' => ( $book->save() ) ], 200 );
+    }
+
+    public function store(Request $request)
+    {
+        $book        = new Book();
+        $book->id    = $request->input( 'id' );
+        $book->title = $request->input( 'title' );
+        $book->desc  = $request->input( 'desc' );
+        $book->img   = $request->input( 'img' );
         return response()->json( [ 'success' => ( $book->save() ) ], 200 );
     }
 }
