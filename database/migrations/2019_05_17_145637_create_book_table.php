@@ -17,7 +17,7 @@ class CreateBookTable extends Migration
             $table->increments( 'id' );
             $table->string( 'title', 50 );
             $table->mediumText( 'description' );
-            $table->string( 'image', 20 );
+            $table->string( 'image', 255 );
             $table->timestamps();
             $table->softDeletes();
         } );
