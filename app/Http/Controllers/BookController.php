@@ -58,12 +58,15 @@ class BookController extends Controller
             $book->book_id        = $request->input( 'new_book_id' );
             $book->competition_id = 3;
             $book->is_current     = true;
+            return response()->json( [ 'book' => ( $book ), 'ac'=>'createnew' ], 200 );
         } else {
             if ( $request->has( 'new_book_id' ) ) {
                 $book->book_id = $request->input( 'new_book_id' );
+                return response()->json( [ 'book' => ( $book ), 'ac'=>'set new id' ], 200 );
             } else {
                 $book->is_current = false;
                 $book->score      = $request->input( 'score' );
+                return response()->json( [ 'book' => ( $book ), 'ac'=>'setscore' ], 200 );
             }
         }
 
