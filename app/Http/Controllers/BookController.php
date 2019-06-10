@@ -77,7 +77,7 @@ class BookController extends Controller
         $book->title = $request->input( 'title' );
         $book->description  = $request->input( 'desc' );
         $book->image   = $request->input( 'img' );
-        return response()->json(['all'=>$request->all(), 'json'=>$request->json()->all(), 'content'=>json_decode($request->getContent(), true)]);
+        return response()->json(['success'=>true, 'all'=>$request->all(), 'json'=>$request->json()->all(), 'content'=>json_decode($request->getContent(), true)]);
 //        return response()->json( [ 'success' => ( $book->save() ) ], 200 );
     }
 }
