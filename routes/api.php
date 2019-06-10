@@ -33,7 +33,7 @@ Route::get( 'books/{book}/questions', 'BookController@showWithQuestions' );
 Route::get( 'books/{book}/locations', 'BookController@showWithLocations' );
 Route::post('books', 'BookController@store');
 Route::post('questions', 'QuestionController@store');
-
+Route::post('locations', 'LocationController@store');
 
 Route::get('users/{user}/competitions/{competition}', 'UserBookController@showUserBooksByCompetition');
 Route::get('competitions/current', 'UserBookController@showUsersByCurrentCompetition');
