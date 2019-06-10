@@ -54,6 +54,7 @@ class BookController extends Controller
 
         if ( $book === null ) {
             $book                 = new UserBook();
+            $book->id             = UserBook::count() + 1;
             $book->user_id        = $request->input( 'user_id' );
             $book->book_id        = $request->input( 'new_book_id' );
             $book->competition_id = 3;
@@ -72,11 +73,12 @@ class BookController extends Controller
 
     public function store(Request $request)
     {
-        $book        = new Book();
-        $book->id    = $request->input( 'id' );
-        $book->title = $request->input( 'title' );
-        $book->description  = $request->input( 'desc' );
-        $book->image   = $request->input( 'img' );
+        $book              = new Book();
+        $book->id          = $request->input( 'id' );
+        $book->title       = $request->input( 'title' );
+        $book->description = $request->input( 'desc' );
+        $book->image       = $request->input( 'img' );
+
         return response()->json( [ 'success' => ( $book->save() ) ], 200 );
     }
 }
