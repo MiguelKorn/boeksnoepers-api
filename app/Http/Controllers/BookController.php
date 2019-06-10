@@ -66,7 +66,6 @@ class BookController extends Controller
             } else {
                 $book->is_current = false;
                 $book->score      = $request->input( 'score' );
-                return response()->json( [ 'book' => ( $book ), 'ac'=>'setscore' ], 200 );
             }
         }
 
